@@ -1,3 +1,10 @@
 import React from 'react';
+import { styled } from './stitches.config';
 
-export default ({ name }) => <h1>Hello {name}!</h1>;
+const Heading = styled('h1', {
+  fontFamily: 'mono',
+  fontSize: '$6xl',
+
+})
+
+export default ({ name }) => <Heading>Hello {name}!</Heading>;
